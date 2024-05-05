@@ -46,3 +46,30 @@ This project provides resources and examples for various software testing concep
         coverage report -m   
         coverage html  
    ```
+
+## Pytest basic command
+- To run pytest use
+   ```bash
+        pytest 
+   ```
+   this runs all the files with starting or ending`test_` or have `test` in the them 
+- To get pytest to print things to the commandline use -s flag
+   ```bash
+        pytest test_case/test_circle.py -s 
+   ```
+-  To see each test case in each test file being run do this pytest -v
+   ```bash
+        pytest -v
+        pytest test_case/test_rectangle.py -v
+   ```
+- To run a particular marker do this
+   ```bash
+        pytest -m slow
+   ```
+- To run a particular test function in a test file do this
+   ```bash
+        pytest test_case/test_api.py::test_can_list_tasks 
+   ```
+
+    
+   
