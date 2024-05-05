@@ -25,22 +25,23 @@ This project provides resources and examples for various software testing concep
         pytest
     ```
     
-        Or
-    
+    Or
+  
     ```bash
         pytest test/test_class.py
     ```
-    
-  
-
-
-
-
-pytest
-touch .coveragerc 
-[run]
-source = src 
-
-coverage run -m pytest                                    
-coverage report -m   
-coverage html  
+- Next you check for test coverage. Create `.coveragerc` file
+   ```bash
+        touch .coveragerc 
+   ```
+- Add the following into it. Note: Use the name of the directoey containing your logic
+   ```bash
+        [run]
+        source = src 
+   ```
+- Run the following to generate a coverage report 
+   ```bash
+        coverage run -m pytest                                    
+        coverage report -m   
+        coverage html  
+   ```
