@@ -52,7 +52,7 @@ This project provides resources and examples for various software testing concep
    ```bash
         pytest 
    ```
-   this runs all the files with starting or ending`test_` or have `test` in the them 
+   this runs all the files with starting or ending`test_` or have `test` in them 
 - To get pytest to print things to the commandline use -s flag
    ```bash
         pytest test_case/test_circle.py -s 
