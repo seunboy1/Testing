@@ -42,7 +42,7 @@ This project provides resources and examples for various software testing concep
    ```
 - Run the following to generate a coverage report 
    ```bash
-        coverage run -m pytest                                    
+        coverage run -m pytest -v                               
         coverage report -m   
         coverage html  
    ```
