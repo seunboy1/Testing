@@ -19,6 +19,7 @@ This project provides resources and examples for various software testing concep
 ## Instructions
 - Create a `test` folder
 - Create a test file for each of your python file implementation with the name either starting, ending or having `test` in it. Eg `test_` , `_test_`, `_test.py`.
+- The names of your tes methods should start with `test_`
 - Write your unit test and integration test in all of the test files.
 - You can run your test either by running this at the root directory
     ```bash

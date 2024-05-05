@@ -13,7 +13,7 @@ class TestCircle:
 
         Alternatively you can use @pytest.fixture
 
-        To see it in action, run pytest test_case/test_circle.py -s in your terminal
+        Note: To get pytest to print things to the commandline use -s flag. pytest test_case/test_circle.py -s
     """
 
     def setup_method(self, method):
