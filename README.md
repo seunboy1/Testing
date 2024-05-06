@@ -70,6 +70,3 @@ This project provides resources and examples for various software testing concep
    ```bash
         pytest test_case/test_api.py::test_can_list_tasks 
    ```
-
-    
-   
