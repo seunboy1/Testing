@@ -16,10 +16,8 @@ Notes:
     Conftest allows you to declare values which can be used in other test files.
 """
 
-
-import math
 import pytest
-from src.my_class import Circle, Rectangle, Shape
+from src.my_class import Circle, Rectangle
 
 # This instance of Rectangle is used in test_conftest_instance() in the test_rectangle file 
 @pytest.fixture

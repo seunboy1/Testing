@@ -11,9 +11,13 @@ This project provides resources and examples for various software testing concep
 
 - Coverage is a Python library that calculates the percentage of your code that is executed by your tests. This helps you identify areas where you might need to write more tests to achieve better code coverage.
 
+### Linting
+
+- Linting is an automated process that analyzes your code to identify potential errors, stylistic inconsistencies, and readability issues. It's like a grammar and style checker for programmers, helping you maintain clean, consistent, and well-formatted code.
+
 ### Installation
  ```bash
-    pip install pytest coverage
+    pip install pytest coverage pylint
  ```
 
 ## Instructions
@@ -69,4 +73,12 @@ This project provides resources and examples for various software testing concep
 - To run a particular test function in a test file do this
    ```bash
         pytest test_case/test_api.py::test_can_list_tasks 
+   ```
+
+
+## Pylint setup and basic command
+- 
+- To run pylint use
+   ```bash
+        pylint 
    ```

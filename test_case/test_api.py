@@ -2,17 +2,6 @@ import uuid
 import pytest
 import requests
 
-"""
-
-    Integration test example
-
-    API https://todo.pixegami.io/docs
-    Note: 
-    To get pytest to print things to the commandline use -s flag
-    To run a particular test function a test file : pytest test_case/test_api.py::test_can_list_tasks
-    To see each test case being run: pytest -v
-"""
-
 
 @pytest.fixture
 def global_variable():
@@ -28,24 +17,24 @@ def global_variable():
     lst = [endpoint,payload]
     return lst
 
-def create_task(payload, endpoint):
-    return requests.put(endpoint + "create-task", json=payload)
+def create_task(payload, endpoint, timeout = 20):
+    return requests.put(endpoint + "create-task", json=payload, timeout=timeout)
 
-def update_task(payload, endpoint):
-    return requests.put(endpoint + "update-task", json=payload)
+def update_task(payload, endpoint, timeout = 20):
+    return requests.put(endpoint + "update-task", json=payload, timeout=timeout)
 
-def get_task(task_id, endpoint):
-    return requests.get(endpoint + f"get-task/{task_id}")
+def get_task(task_id, endpoint, timeout = 20):
+    return requests.get(endpoint + f"get-task/{task_id}", timeout=timeout)
 
-def list_task(user_id, endpoint):
-    return requests.get(endpoint + f"list-tasks/{user_id}")
+def list_task(user_id, endpoint, timeout = 20):
+    return requests.get(endpoint + f"list-tasks/{user_id}", timeout=timeout)
 
-def delete_task(task_id, endpoint):
-    return requests.delete(endpoint + f"delete-task/{task_id}")
+def delete_task(task_id, endpoint, timeout = 20):
+    return requests.delete(endpoint + f"delete-task/{task_id}", timeout=timeout)
 
 
-def test_can_call_endpoint(global_variable):
-    response = requests.get(global_variable[0])
+def test_can_call_endpoint(global_variable, timeout = 20):
+    response = requests.get(global_variable[0], timeout=timeout)
     # data = response.json()
     assert response.status_code == 200
 

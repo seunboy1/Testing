@@ -8,8 +8,6 @@ class Shape:
 
     def perimeter(self):
         pass
-
-
 class Rectangle(Shape):
 
     def __init__(self, length, width) -> None:

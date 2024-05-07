@@ -22,7 +22,6 @@ def test_add_strings():
 def main():
     print("Testing!!!!")
 
-
 """
     pytest mark provides a way to provide metadata to test. 
     Its a way of providing label and tags to your test
@@ -46,5 +45,5 @@ def test_skip():
     assert division(10,5) == 2
 
 @pytest.mark.xfail(reason="No cannot divide by zero")
-def test_very_slow():
+def test_very_xfail():
     pass

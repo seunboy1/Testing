@@ -1,6 +1,5 @@
 import math
-import pytest
-from src.my_class import Circle, Shape
+from src.my_class import Circle
 
 
 class TestCircle:
@@ -17,6 +16,7 @@ class TestCircle:
     """
 
     def setup_method(self, method):
+        #pylint: disable=attribute-defined-outside-init
 
         """
             This is defined to run tear down code after each test method
