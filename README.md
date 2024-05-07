@@ -79,7 +79,9 @@ This project provides resources and examples for various software testing concep
 ## Pylint setup and basic command
 - Install pylint extension on vscode
 - Start the pylint server by going to the command palette
+  
   ![pylint](./docs/pylint.png)
+  
 - To run pylint on terminal
    ```bash
         pylint --recursive=y . 
