@@ -17,7 +17,7 @@ This project provides resources and examples for various software testing concep
 
 ### Installation
  ```bash
-    pip install pytest coverage pylint
+    pip install pytest coverage pylint black
  ```
 
 ## Instructions
@@ -85,4 +85,11 @@ This project provides resources and examples for various software testing concep
 - To run pylint on terminal
    ```bash
       pylint --recursive=y . 
+   ```
+
+## Code Formatter
+- Black is the uncompromising Python code formatter
+   ```bash
+      black test_case/test_my_function.py --diff
+      black test_case/test_my_function.py 
    ```

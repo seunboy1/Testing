@@ -31,4 +31,3 @@ def test_instance_not_equal(my_rectangle, weird_rectangle):
 
 def test_conftest_instance(conftest_rectangle):
     assert conftest_rectangle.area() ==  50 * 20
-
