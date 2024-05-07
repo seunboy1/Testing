@@ -81,8 +81,8 @@ This project provides resources and examples for various software testing concep
 - Start the pylint server by going to the command palette
   
   ![pylint](./docs/pylint.png)
-  
+
 - To run pylint on terminal
    ```bash
-        pylint --recursive=y . 
+      pylint --recursive=y . 
    ```
