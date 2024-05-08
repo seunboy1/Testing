@@ -7,4 +7,12 @@ repos:
     - id: trailing-whitespace
     - id: end-of-file-fixer
     - id: check-yaml
+    - id: sort-simple-yaml
+    - id: name-tests-test
+    - id: detect-private-key
+    - id: detect-aws-credentials
+    - id: check-yaml
+    - id: check-toml
+    - id: check-json
+    - id: requirements-txt-fixer
     - id: check-added-large-files
