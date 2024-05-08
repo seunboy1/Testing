@@ -1,7 +1,7 @@
 # Testing
-This project provides resources and examples for various software testing concepts and practices. It aims to be a valuable learning tool for developers and testers.
+This project provides resources and examples for various software best concepts and practices. It aims to be a valuable learning tool for developers and testers.
 
-## Testing Tools Overview
+## Software Tools Overview
 
 ### PyTest
 
@@ -11,13 +11,19 @@ This project provides resources and examples for various software testing concep
 
 - Coverage is a Python library that calculates the percentage of your code that is executed by your tests. This helps you identify areas where you might need to write more tests to achieve better code coverage.
 
-### Linting
+### Linting(Pylint)
 
 - Linting is an automated process that analyzes your code to identify potential errors, stylistic inconsistencies, and readability issues. It's like a grammar and style checker for programmers, helping you maintain clean, consistent, and well-formatted code.
 
+### Code formatter (black)
+- Code formatters are tools that automatically format your code according to a set of rules or style guides. They can fix indentation, spacing, alignment, line breaks, and other aspects of code appearance.
+
+### Precommit Hooks (pre-commit)
+- Pre-commit hooks are scripts that execute before you commit your code changes in a Git repository. They act as a safety net, automatically running checks and validations on your code to identify potential issues before they are integrated into the main codebase.
+
 ### Installation
  ```bash
-    pip install pytest coverage pylint black
+    pip install pytest coverage pylint black pre-commit
  ```
 
 ## Instructions
@@ -29,37 +35,37 @@ This project provides resources and examples for various software testing concep
     ```bash
         pytest
     ```
-    
+
     Or
-  
+
     ```bash
         pytest test/test_class.py
     ```
 - Next you check for test coverage. Create `.coveragerc` file
    ```bash
-        touch .coveragerc 
+        touch .coveragerc
    ```
 - Add the following into it. Note: Use the name of the directoey containing your logic
    ```bash
         [run]
-        source = src 
+        source = src
    ```
-- Run the following to generate a coverage report 
+- Run the following to generate a coverage report
    ```bash
-        coverage run -m pytest -v                               
-        coverage report -m   
-        coverage html  
+        coverage run -m pytest -v
+        coverage report -m
+        coverage html
    ```
 
 ## Pytest basic command
 - To run pytest use
    ```bash
-        pytest 
+        pytest
    ```
-   this runs all the files with starting or ending `test_` or have `test` in them 
+   this runs all the files with starting or ending `test_` or have `test` in them
 - To get pytest to print things to the commandline use -s flag
    ```bash
-        pytest test_case/test_circle.py -s 
+        pytest test_case/test_circle.py -s
    ```
 -  To see each test case in each test file being run do this pytest -v
    ```bash
@@ -72,24 +78,25 @@ This project provides resources and examples for various software testing concep
    ```
 - To run a particular test function in a test file do this
    ```bash
-        pytest test_case/test_api.py::test_can_list_tasks 
+        pytest test_case/test_api.py::test_can_list_tasks
    ```
 
 
 ## Pylint setup and basic command
 - Install pylint extension on vscode
 - Start the pylint server by going to the command palette
-  
+
   ![pylint](./docs/pylint.png)
 
 - To run pylint on terminal
    ```bash
-      pylint --recursive=y . 
+      pylint --recursive=y .
    ```
 
-## Code Formatter
+## Black basic usage
 - Black is the uncompromising Python code formatter
    ```bash
+      black --diff . | less
       black test_case/test_my_function.py --diff
-      black test_case/test_my_function.py 
+      black test_case/test_my_function.py
    ```
