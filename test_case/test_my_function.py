@@ -1,6 +1,8 @@
 import time
+
 import pytest
-from src.my_function import increment, division
+
+from src.my_function import division, increment
 
 
 def test_increment():
@@ -28,10 +30,10 @@ def main():
 
 
 """
-    pytest mark provides a way to provide metadata to test. 
+    pytest mark provides a way to provide metadata to test.
     Its a way of providing label and tags to your test
 
-    Some built in markers are 
+    Some built in markers are
     skip: this skips the test
     xfail: this mark it has fail
 

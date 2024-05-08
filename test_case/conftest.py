@@ -2,7 +2,7 @@
 Conftest.py
 
 Description:
-    This demonstrates how to use conftest in pytest. 
+    This demonstrates how to use conftest in pytest.
 
 
 
@@ -17,12 +17,15 @@ Notes:
 """
 
 import pytest
+
 from src.my_class import Circle, Rectangle
+
 
 # This instance of Rectangle is used in test_conftest_instance() in the test_rectangle file
 @pytest.fixture
 def conftest_rectangle():
-    return Rectangle(50,20)
+    return Rectangle(50, 20)
+
 
 # This instance of Circle is used in test_conftest_instance() in the test_circle file
 @pytest.fixture

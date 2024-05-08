@@ -1,1 +1,1 @@
-from src.my_function import increment, division
+from src.my_function import division, increment
