@@ -29,26 +29,26 @@ repos:
     - id: black
       language_version: python3.11
 
-# - repo: local
-#   hooks:
-#     - id: pylint
-#       name: pylint
-#       entry: pylint
-#       language: system
-#       types: [python]
-#       args:
-#         [
-#           # "-rn", # Only display messages
-#           # "-sn", # Don't display the score
-#           "--recursive=y"
-#         ]
+- repo: local
+  hooks:
+    - id: pylint
+      name: pylint
+      entry: pylint
+      language: system
+      types: [python]
+      args:
+        [
+          # "-rn", # Only display messages
+          # "-sn", # Don't display the score
+          "--recursive=y"
+        ]
 
-# - repo: local
-#   hooks:
-#   - id: pytest
-#     name: pytest
-#     entry: pytest test_case
-#     language: system
-#     types: [python]
-#     pass_filenames: false
-#     always_run: true
+- repo: local
+  hooks:
+  - id: pytest
+    name: pytest
+    entry: pytest test_case
+    language: system
+    types: [python]
+    pass_filenames: false
+    always_run: true
