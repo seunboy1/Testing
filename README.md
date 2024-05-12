@@ -120,3 +120,5 @@ This project provides resources and examples for various software best concepts 
    ```
 - Now pre-commit checks is done after every commits
 - Now you can make changes and commit. It should return something like this:
+
+   ![result](./docs/result.png)
