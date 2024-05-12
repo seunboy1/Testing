@@ -100,3 +100,23 @@ This project provides resources and examples for various software best concepts 
       black test_case/test_my_function.py --diff
       black test_case/test_my_function.py
    ```
+
+## Pre-commit setup and basic command
+- Install the pre-commit hook:
+   ```bash
+      pip install pre-commit
+   ```
+- Create a configuration file called `.pre-commit-config.yaml`
+   ```bash
+      pre-commit sample-config > .pre-commit-config.yaml
+   ```
+-  Run against all the files
+   ```bash
+      pre-commit run --all-files
+   ```
+- To automate pre-commit checks, you will have to install the git hook scripts.
+   ```bash
+      pre-commit install
+   ```
+- Now pre-commit checks is done after every commits
+- Now you can make changes and commit. It should return something like this:
